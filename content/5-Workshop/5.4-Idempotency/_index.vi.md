@@ -111,7 +111,7 @@ sam build
 sam deploy
 ```
 
-![Deploy lần hai](/WorkshopFCAJ/images/5-Workshop/5.4-Idempotency/deploy-result.png)
+![Deploy lần hai](../../../images/5-Workshop/5.4-Idempotency/deploy-result.png)
 
 #### 4. Kiểm thử
 
@@ -138,9 +138,9 @@ aws dynamodb scan --table-name $table
 
 Bảng DynamoDB có một dòng `A001` với `status = PROCESSING`.
 
-![Dữ liệu trong DynamoDB](/WorkshopFCAJ/images/5-Workshop/5.4-Idempotency/dynamodb-item.png)
+![Dữ liệu trong DynamoDB](../../../images/5-Workshop/5.4-Idempotency/dynamodb-item.png)
 
-![Dữ liệu trong DynamoDB](/WorkshopFCAJ/images/5-Workshop/5.4-Idempotency/duplicate-log.png)
+![Dữ liệu trong DynamoDB](../../../images/5-Workshop/5.4-Idempotency/duplicate-log.png)
 
 **Trường hợp 2: gửi trùng cùng đơn**
 
@@ -152,7 +152,7 @@ sam logs --stack-name order-system --name ProcessOrderFn --tail
 Log hiển thị dòng `Don trung, bo qua: A001`. Nhấn `Ctrl+C` để thoát chế độ theo dõi log.
 Bảng DynamoDB vẫn chỉ có một dòng `A001`.
 
-![Log báo đơn trùng](/WorkshopFCAJ/images/5-Workshop/5.4-Idempotency/duplicate-log.png)
+![Log báo đơn trùng](../../../images/5-Workshop/5.4-Idempotency/duplicate-log.png)
 
 **Trường hợp 3: tin nhắn lỗi đi vào DLQ**
 
@@ -163,7 +163,7 @@ aws sqs send-message --queue-url $q --message-body "khong-phai-json"
 Lambda lỗi ở `JSON.parse`, SQS thử lại sau mỗi 60 giây. Sau khoảng 3 đến 4 phút,
 tin nhắn xuất hiện trong DLQ (Console → DLQ → **Poll for messages**).
 
-![Tin nhắn lỗi trong DLQ](/WorkshopFCAJ/images/5-Workshop/5.4-Idempotency/dlq-message.png)
+![Tin nhắn lỗi trong DLQ](../../../images/5-Workshop/5.4-Idempotency/dlq-message.png)
 
 ## Kiểm tra kết quả
 

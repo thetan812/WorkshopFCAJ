@@ -18,7 +18,7 @@ Workflow:
 3. On success: update the status to `DONE`.
 4. On failure: update the status to `FAILED`, send an alert through SNS, and end in a failed state.
 
-![Workflow diagram](/WorkshopFCAJ/images/5-Workshop/5.5-Orchestration/workflow.png)
+![Workflow diagram](../../images/5-Workshop/5.5-Orchestration/workflow.png)
 
 #### 1. Replace the entire template.yaml
 
@@ -272,13 +272,13 @@ Keep the same answers as last time. When asked for the two parameters, enter:
 | SenderEmail | The email verified in section 5.2 |
 | AdminEmail | The email that receives alerts (can be the same email as above) |
 
-![Deploy result](/WorkshopFCAJ/images/5-Workshop/5.5-Orchestration/deploy-result.png)
+![Deploy result](../../images/5-Workshop/5.5-Orchestration/deploy-result.png)
 
 **Confirm the SNS subscription:** AWS sends an email titled *AWS Notification -
 Subscription Confirmation* to `AdminEmail`. Open the email and click **Confirm
 subscription**, otherwise you will not receive alerts.
 
-![Confirm SNS](/WorkshopFCAJ/images/5-Workshop/5.5-Orchestration/sns-confirm.png)
+![Confirm SNS](../../images/5-Workshop/5.5-Orchestration/sns-confirm.png)
 
 #### 4. Testing
 
@@ -303,7 +303,7 @@ Verify:
 2. Go to **Step Functions** → **State machines** → select the state machine → the execution named `B001` → status **Succeeded**. Open **Graph view** to see the steps in green.
 3. `aws dynamodb scan --table-name $table` shows `B001` with `status = DONE`.
 
-![Successful execution](/WorkshopFCAJ/images/5-Workshop/5.5-Orchestration/execution-success.png)
+![Successful execution](../../images/5-Workshop/5.5-Orchestration/execution-success.png)
 
 **Case 2: duplicate order**
 
@@ -331,8 +331,8 @@ Wait about 20 to 30 seconds (3 retries spaced 2, 4, and 8 seconds apart), then c
 2. The alert email *Alert - order processing failed* arrives at `AdminEmail`.
 3. DynamoDB: `B002` has `status = FAILED`.
 
-![Failed execution](/WorkshopFCAJ/images/5-Workshop/5.5-Orchestration/execution-failed.png)
-![Alert email](/WorkshopFCAJ/images/5-Workshop/5.5-Orchestration/alert-email.png)
+![Failed execution](../../images/5-Workshop/5.5-Orchestration/execution-failed.png)
+![Alert email](../../images/5-Workshop/5.5-Orchestration/alert-email.png)
 
 ## Verify the results
 

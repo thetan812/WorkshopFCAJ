@@ -67,7 +67,7 @@ Policy này rộng để thuận tiện cho môi trường thử nghiệm. Với
 hãy giới hạn `Resource` theo từng tài nguyên cụ thể.
 
 #### Tạo quyền (policy)
-![Tạo IAM policy](/WorkshopFCAJ/images/5-Workshop/5.2-Prerequisite/001.png)
+![Tạo IAM policy](../../../images/5-Workshop/5.2-Prerequisite/001.png)
 
 #### 2. Cài đặt công cụ
 
@@ -102,7 +102,7 @@ aws sts get-caller-identity
 Nhập Access Key, Secret Key, region ap-southeast-1, output json.
 Kết quả của lệnh cuối phải hiển thị thông tin tài khoản của bạn.
 
-![Kiểm tra danh tính](/WorkshopFCAJ/images/5-Workshop/5.2-Prerequisite/002.png)
+![Kiểm tra danh tính](../../../images/5-Workshop/5.2-Prerequisite/002.png)
 
 
 Không đưa Access Key lên GitHub. Hãy xóa hoặc vô hiệu hóa key sau khi hoàn thành workshop.
@@ -117,7 +117,7 @@ Tài khoản SES mới ở chế độ *sandbox*: chỉ gửi được thư *t�
 3. Mở email xác nhận từ AWS và bấm vào liên kết.
 4. Trạng thái identity chuyển sang *Verified*.
 
-![SES verified](/WorkshopFCAJ/images/5-Workshop/5.2-Prerequisite/003.png)
+![SES verified](../../../images/5-Workshop/5.2-Prerequisite/003.png)
 
 #### 5. Đặt cảnh báo chi phí
 
@@ -125,7 +125,7 @@ Tài khoản SES mới ở chế độ *sandbox*: chỉ gửi được thư *t�
 2. Chọn *Zero spend budget* hoặc *Monthly cost budget* (ví dụ 5 USD).
 3. Nhập email nhận cảnh báo.
 
-![Tạo budget](/WorkshopFCAJ/images/5-Workshop/5.2-Prerequisite/004.png)
+![Tạo budget](../../../images/5-Workshop/5.2-Prerequisite/004.png)
 
 #### 6. Tạo thư mục dự án
 

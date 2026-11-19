@@ -21,7 +21,7 @@ Workshop này xây dựng luồng xử lý đơn hàng theo hướng **event-dri
 
 ## Kiến trúc
 
-{{< figure src="/WorkshopFCAJ/images/5-Workshop/5.1-Introduction/architecture.png" alt="Kiến trúc tổng thể" >}}
+{{< figure src="../../../images/5-Workshop/5.1-Introduction/architecture.png" alt="Kiến trúc tổng thể" >}}
 
 ## Chỉ số đánh giá
 

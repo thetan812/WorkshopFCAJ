@@ -16,7 +16,7 @@ I used to think that when traffic increases, just enabling EC2 Auto Scaling to i
   - ElastiCache supports caching.
 When traffic increases 10 times, EC2 automatically scales from 2 to 10 instances. However, RDS CPU spikes to 95–100%, the number of connections increases highly, and the API starts responding slowly.
 At this point, even though EC2 has scaled out, the system can still experience overload.
-![Auto-Scaling](/WorkshopFCAJ/images/blogpicture/blog3.jpg)
+![Auto-Scaling](../../images/blogpicture/blog3.jpg)
 # Why is auto scaling not enough?
 In my opinion, the problem lies in the fact that Auto Scaling usually only scales a specific component, while system performance depends on many different components.
 * Examples:

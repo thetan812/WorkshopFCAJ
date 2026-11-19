@@ -239,7 +239,7 @@ $sm    = aws cloudformation describe-stacks --stack-name order-system --query "S
 $env:API_KEY = "<the-ApiKey-you-just-created>"
 $env:AWS_REGION = "ap-southeast-1"
 ```
-![Deploy result](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/deploy-result.png)
+![Deploy result](../../images/5-Workshop/5.7-Experiments/deploy-result.png)
 
 >Do not push `ApiKey` or `samconfig.toml` to GitHub. These two API endpoints are
 >public on the Internet (protected only by a key), so they will be deleted in
@@ -349,14 +349,14 @@ node report.mjs $table s20 20
 node report.mjs $table a20 20
 ```
 
-![Loadtest result](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/loadtest-result.png)
+![Loadtest result](../../images/5-Workshop/5.7-Experiments/loadtest-result.png)
 
-![Report result](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/report-result.png)
+![Report result](../../images/5-Workshop/5.7-Experiments/report-result.PNG)
 
 Repeat with 50 orders (`s50`, `a50`, wait about 4 minutes before running `report`).
 Run each load level at least 3 times and take the average.
 
-![loadtest result](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/50.png)
+![loadtest result](../../images/5-Workshop/5.7-Experiments/50.png)
 
 What to read from the output:
 
@@ -389,7 +389,7 @@ The result table shows the `emailCount` of each order. By design, the
 synchronous path sends an email every time it receives a request, while the
 asynchronous path only processes the first order.
 
-![Duplicate result](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/duplicate-result.png)
+![Duplicate result](../../images/5-Workshop/5.7-Experiments/duplicate-result.png)
 
 ## Experiment 3: failures and alerts
 
@@ -429,8 +429,8 @@ compare it with the history of the `order-dlq-has-messages` alarm:
 aws sqs send-message --queue-url (aws cloudformation describe-stacks --stack-name order-system --query "Stacks[0].Outputs[?OutputKey=='QueueUrl'].OutputValue" --output text) --message-body "not-json"
 aws cloudwatch describe-alarm-history --alarm-name order-dlq-has-messages --history-item-type StateUpdate --max-items 3 --query "AlarmHistoryItems[].[Timestamp,HistorySummary]" --output table
 ```
-![Failed execution](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/failed-execution.png)
-![Alarm history](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/alarm-history.png)
+![Failed execution](../../images/5-Workshop/5.7-Experiments/failed-execution.png)
+![Alarm history](../../images/5-Workshop/5.7-Experiments/alarm-history.png)
 
 
 ## Summary of Experimental Results

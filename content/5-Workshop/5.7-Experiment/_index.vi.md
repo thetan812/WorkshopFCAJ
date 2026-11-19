@@ -238,7 +238,7 @@ $sm    = aws cloudformation describe-stacks --stack-name order-system --query "S
 $env:API_KEY = "<ApiKey-ban-vua-tao>"
 $env:AWS_REGION = "ap-southeast-1"
 ```
-![Kết quả deploy](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/deploy-result.png)
+![Kết quả deploy](../../../images/5-Workshop/5.7-Experiments/deploy-result.png)
 
 >Không đưa `ApiKey` và `samconfig.toml` lên GitHub. Hai đường API này công
 >khai trên Internet (chỉ được bảo vệ bằng khóa), nên sẽ bị xóa ở mục 5.8.
@@ -347,14 +347,14 @@ node report.mjs $table s20 20
 node report.mjs $table a20 20
 ```
 
-![Kết quả loadtest](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/loadtest-result.png)
-![Kết quả report](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/report-result.png)
+![Kết quả loadtest](../../../images/5-Workshop/5.7-Experiments/loadtest-result.png)
+![Kết quả report](../../../images/5-Workshop/5.7-Experiments/report-result.PNG)
 
 Lặp lại với 50 đơn (`s50`, `a50`, chờ khoảng 4 phút trước khi chạy` report`).
 Nên chạy mỗi mức tải ít nhất 3 lần và lấy trung bình.
 
 
-![Kết quả loadtest](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/50.png)
+![Kết quả loadtest](../../../images/5-Workshop/5.7-Experiments/50.png)
 
 Cần đọc ra:
 
@@ -386,7 +386,7 @@ node ..\tools\report.mjs $table dup 2
 quả cho thấy `emailCount` của từng đơn. Theo thiết kế, đường đồng bộ gửi email
 mỗi lần nhận yêu cầu, còn đường bất đồng bộ chỉ xử lý đơn đầu tiên.
 
-![Kết quả gửi trùng](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/duplicate-result.png)
+![Kết quả gửi trùng](../../../images/5-Workshop/5.7-Experiments/duplicate-result.png)
 
 ## Thí nghiệm 3: lỗi và cảnh báo
 
@@ -425,8 +425,8 @@ lịch sử alarm ` order-dlq-has-messages`:
 aws sqs send-message --queue-url (aws cloudformation describe-stacks --stack-name order-system --query "Stacks[0].Outputs[?OutputKey=='QueueUrl'].OutputValue" --output text) --message-body "khong-phai-json"
 aws cloudwatch describe-alarm-history --alarm-name order-dlq-has-messages --history-item-type StateUpdate --max-items 3 --query "AlarmHistoryItems[].[Timestamp,HistorySummary]" --output table
 ```
-![Execution thất bại](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/failed-execution.png)
-![Lịch sử alarm](/WorkshopFCAJ/images/5-Workshop/5.7-Experiments/alarm-history.png)
+![Execution thất bại](../../../images/5-Workshop/5.7-Experiments/failed-execution.png)
+![Lịch sử alarm](../../../images/5-Workshop/5.7-Experiments/alarm-history.png)
 
 
 ## Tổng hợp kết quả thực nghiệm

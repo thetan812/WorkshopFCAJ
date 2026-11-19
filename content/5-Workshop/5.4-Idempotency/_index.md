@@ -114,7 +114,7 @@ sam build
 sam deploy
 ```
 
-![Second deploy](/WorkshopFCAJ/images/5-Workshop/5.4-Idempotency/deploy-result.png)
+![Second deploy](../../images/5-Workshop/5.4-Idempotency/deploy-result.png)
 
 #### 4. Test
 
@@ -141,7 +141,7 @@ aws dynamodb scan --table-name $table
 
 The DynamoDB table has one row `A001` with `status = PROCESSING`.
 
-![Data in DynamoDB](/WorkshopFCAJ/images/5-Workshop/5.4-Idempotency/dynamodb-item.png)
+![Data in DynamoDB](../../images/5-Workshop/5.4-Idempotency/dynamodb-item.png)
 
 **Case 2: sending the same order twice**
 
@@ -153,7 +153,7 @@ sam logs --stack-name order-system --name ProcessOrderFn --tail
 The log shows the line `Duplicate order, skipping: A001`. Press `Ctrl+C` to exit log tailing mode.
 The DynamoDB table still has only one `A001` row.
 
-![Duplicate order log](/WorkshopFCAJ/images/5-Workshop/5.4-Idempotency/duplicate-log.png)
+![Duplicate order log](../../images/5-Workshop/5.4-Idempotency/duplicate-log.png)
 
 **Case 3: a faulty message goes to the DLQ**
 
@@ -164,7 +164,7 @@ aws sqs send-message --queue-url $q --message-body "not-json"
 The Lambda fails at `JSON.parse`, and SQS retries every 60 seconds. After about
 3 to 4 minutes, the message appears in the DLQ (Console → DLQ → **Poll for messages**).
 
-![Faulty message in the DLQ](/WorkshopFCAJ/images/5-Workshop/5.4-Idempotency/dlq-message.png)
+![Faulty message in the DLQ](../../images/5-Workshop/5.4-Idempotency/dlq-message.png)
 
 ## Verify the result
 

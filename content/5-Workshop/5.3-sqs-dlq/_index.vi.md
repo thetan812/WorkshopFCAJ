@@ -65,7 +65,7 @@ Trả lời các câu hỏi như sau:
 
 Khi hoàn tất, SAM in ra `QueueUrl` và `DlqUrl`.
 
-![Kết quả deploy](/WorkshopFCAJ/images/5-Workshop/5.3-SQS-DLQ/deploy-result.png)
+![Kết quả deploy](../../../images/5-Workshop/5.3-sqs-dlq/deploy-result.PNG)
 
 #### 3. Kiểm tra trên Console
 
@@ -73,7 +73,7 @@ Khi hoàn tất, SAM in ra `QueueUrl` và `DlqUrl`.
 2. Bạn thấy hai hàng đợi có tên bắt đầu bằng `order-system-`.
 3. Mở hàng đợi chính → tab **Dead-letter queue**: hàng đợi lỗi đã được gắn, **Maximum receives = 3**.
 
-![Hàng đợi SQS](/WorkshopFCAJ/images/5-Workshop/5.3-SQS-DLQ/queues.png)
+![Hàng đợi SQS](../../../images/5-Workshop/5.3-sqs-dlq/queues.PNG)
 
 #### 4. Thử để tin nhắn rơi vào DLQ
 
@@ -107,7 +107,7 @@ aws sqs get-queue-attributes --queue-url $dlq --attribute-names ApproximateNumbe
 
 Hoặc vào Console → hàng đợi DLQ → **Send and receive messages** → **Poll for messages**.
 
-![Tin nhắn trong DLQ](/WorkshopFCAJ/images/5-Workshop/5.3-SQS-DLQ/dlq-message.png)
+![Tin nhắn trong DLQ](../../../images/5-Workshop/5.3-sqs-dlq/dlq-message.PNG)
 
 > Các số liệu của SQS là xấp xỉ và có thể trễ vài chục giây.
 
