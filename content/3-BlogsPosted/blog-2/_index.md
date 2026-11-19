@@ -22,7 +22,7 @@ Some outstanding features:
 - Supports transactions, suitable for business logic that needs to ensure data consistency.
 * Example: In a sales system, we can create Customers, Orders, and Products tables. The tables are linked together through primary keys and foreign keys.
 RDS is suitable when the application needs complex data queries or manages many relationships between tables.
-![AWS RDS](/images/blogpicture/blog2a.jpg)
+![AWS RDS](/WorkshopFCAJ/images/blogpicture/blog2a.jpg)
 # II. AMAZON DYNAMODB – NoSQL DATABASE
 
 Unlike RDS, Amazon DynamoDB is a fully managed NoSQL database service by AWS.
@@ -35,7 +35,7 @@ Some outstanding features:
 * Example: With an order system, each order can be stored with a unique OrderID. When information is needed, the system can retrieve it directly through this key.
 DynamoDB is often suitable for applications that need fast access speeds and flexible scalability.
 
-![AWS DynamoBD](/images/blogpicture/blog2b.jpg)
+![AWS DynamoBD](/WorkshopFCAJ/images/blogpicture/blog2b.jpg)
 # III. SO, WHICH TYPE SHOULD AN ORDER SYSTEM USE?
 In my opinion, the choice depends on the specific requirements of the system.
 * Should choose RDS when:

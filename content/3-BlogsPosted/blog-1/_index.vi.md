@@ -54,7 +54,7 @@ Một số lợi ích của DLQ:
 - Tránh thông điệp lỗi liên tục làm ảnh hưởng đến quá trình xử lý chung.
 - Giúp xác định những yêu cầu không thể xử lý thành công.
 - Cho phép kiểm tra nguyên nhân và xử lý lại thông điệp khi đã khắc phục lỗi.
-![AWS](/images/blogpicture/blog1.jpg)
+![AWS](/WorkshopFCAJ/images/blogpicture/blog1.jpg)
 # IV. IDEMPOTENCY – TRÁNH XỬ LÝ TRÙNG ĐƠN HÀNG
 Một điều mình thấy khá thú vị khi tìm hiểu hệ thống sử dụng SQS và Lambda là: một thông điệp có thể được xử lý nhiều lần.
 

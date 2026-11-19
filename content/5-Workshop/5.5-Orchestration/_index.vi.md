@@ -18,7 +18,7 @@ Quy trình:
 3. Thành công: cập nhật trạng thái `DONE`.
 4. Thất bại: cập nhật `FAILED`, gửi cảnh báo qua SNS, kết thúc ở trạng thái lỗi.
 
-![Sơ đồ quy trình](/images/5-Workshop/5.5-Orchestration/workflow.png)
+![Sơ đồ quy trình](/WorkshopFCAJ/images/5-Workshop/5.5-Orchestration/workflow.png)
 
 #### 1. Thay toàn bộ template.yaml
 
@@ -272,13 +272,13 @@ Giữ các câu trả lời như lần trước. Khi được hỏi hai tham s�
 | SenderEmail | Email đã xác minh ở mục 5.2 |
 | AdminEmail | Email nhận cảnh báo (có thể là cùng email trên) |
 
-![Kết quả deploy](/images/5-Workshop/5.5-Orchestration/deploy-result.png)
+![Kết quả deploy](/WorkshopFCAJ/images/5-Workshop/5.5-Orchestration/deploy-result.png)
 
 **Xác nhận đăng ký SNS:** AWS gửi một email tiêu đề *AWS Notification -
 Subscription Confirmation* đến `AdminEmail`. Mở email và bấm **Confirm
 subscription**, nếu không bạn sẽ không nhận được cảnh báo.
 
-![Xác nhận SNS](/images/5-Workshop/5.5-Orchestration/sns-confirm.png)
+![Xác nhận SNS](/WorkshopFCAJ/images/5-Workshop/5.5-Orchestration/sns-confirm.png)
 
 #### 4. Kiểm thử
 
@@ -303,7 +303,7 @@ Kiểm tra:
 2. Vào **Step Functions** → **State machines** → chọn state machine → execution tên `B001` → trạng thái **Succeeded**, mở **Graph view** để thấy các bước màu xanh.
 3. `aws dynamodb scan --table-name $table` cho thấy `B001` có `status = DONE`.
 
-![Execution thành công](/images/5-Workshop/5.5-Orchestration/execution-success.png)
+![Execution thành công](/WorkshopFCAJ/images/5-Workshop/5.5-Orchestration/execution-success.png)
 
 **Trường hợp 2: gửi trùng đơn**
 
@@ -331,8 +331,8 @@ aws sqs send-message --queue-url $q --message-body file://msg-b002.json
 2. Email cảnh báo *Canh bao - xu ly don hang that bai* đến `AdminEmail`.
 3. DynamoDB: `B002` có `status = FAILED`.
 
-![Execution thất bại](/images/5-Workshop/5.5-Orchestration/execution-failed.png)
-![Email cảnh báo](/images/5-Workshop/5.5-Orchestration/alert-email.png)
+![Execution thất bại](/WorkshopFCAJ/images/5-Workshop/5.5-Orchestration/execution-failed.png)
+![Email cảnh báo](/WorkshopFCAJ/images/5-Workshop/5.5-Orchestration/alert-email.png)
 
 ## Kiểm tra kết quả
 

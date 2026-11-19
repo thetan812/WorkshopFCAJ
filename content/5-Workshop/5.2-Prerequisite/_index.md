@@ -70,7 +70,7 @@ Create the following policy and attach it to the user you use to deploy the work
 > restrict the `Resource` to each specific resource.
 
 
-![Create IAM policy](/images/5-Workshop/5.2-Prerequisite/001.png)
+![Create IAM policy](/WorkshopFCAJ/images/5-Workshop/5.2-Prerequisite/001.png)
 
 #### 2. Install the tools
 
@@ -103,7 +103,7 @@ aws sts get-caller-identity
 Enter the Access Key, Secret Key, region `ap-southeast-1`, and output `json`.
 The result of the last command should display your account information.
 
-![Verify identity](/images/5-Workshop/5.2-Prerequisite/002.png)
+![Verify identity](/WorkshopFCAJ/images/5-Workshop/5.2-Prerequisite/002.png)
 
 >Do not push the Access Key to GitHub. Delete or deactivate the key after you finish the workshop.
 
@@ -117,7 +117,7 @@ A new SES account is in *sandbox* mode: it can only send emails *from and to* ve
 3. Open the verification email from AWS and click the link.
 4. The identity status changes to *Verified*.
 
-![SES verified](/images/5-Workshop/5.2-Prerequisite/003.png)
+![SES verified](/WorkshopFCAJ/images/5-Workshop/5.2-Prerequisite/003.png)
 
 #### 5. Set up a cost alert
 
@@ -125,7 +125,7 @@ A new SES account is in *sandbox* mode: it can only send emails *from and to* ve
 2. Choose *Zero spend budget* or *Monthly cost budget* (for example, 5 USD).
 3. Enter the email to receive alerts.
 
-![Create budget](/images/5-Workshop/5.2-Prerequisite/004.png)
+![Create budget](/WorkshopFCAJ/images/5-Workshop/5.2-Prerequisite/004.png)
 
 #### 6. Create the project folder
 ```powershell

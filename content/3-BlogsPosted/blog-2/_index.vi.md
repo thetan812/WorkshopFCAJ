@@ -22,7 +22,7 @@ Một số đặc điểm nổi bật:
 - Hỗ trợ giao dịch (Transaction), phù hợp với các nghiệp vụ cần đảm bảo tính nhất quán dữ liệu.
 * Ví dụ: Trong hệ thống bán hàng, chúng ta có thể tạo các bảng Customers, Orders và Products. Các bảng liên kết với nhau thông qua khóa chính và khóa ngoại.
 RDS phù hợp khi ứng dụng cần truy vấn dữ liệu phức tạp hoặc quản lý nhiều mối quan hệ giữa các bảng.
-![AWS RDS](/images/blogpicture/blog2a.jpg)
+![AWS RDS](/WorkshopFCAJ/images/blogpicture/blog2a.jpg)
 # II. AMAZON DYNAMODB – CƠ SỞ DỮ LIỆU NoSQL
 
 Khác với RDS, Amazon DynamoDB là dịch vụ cơ sở dữ liệu NoSQL được AWS quản lý hoàn toàn.
@@ -34,7 +34,7 @@ Một số đặc điểm nổi bật:
 - Phù hợp với ứng dụng có lượng yêu cầu lớn và mô hình truy cập dữ liệu rõ ràng.
 * Ví dụ: Với hệ thống đơn hàng, mỗi đơn hàng có thể được lưu bằng một OrderID riêng. Khi cần tìm thông tin, hệ thống có thể truy xuất trực tiếp thông qua khóa này.
 DynamoDB thường phù hợp với các ứng dụng cần tốc độ truy cập nhanh và khả năng mở rộng linh hoạt.
-![AWS DynamoBD](/images/blogpicture/blog2b.jpg)
+![AWS DynamoBD](/WorkshopFCAJ/images/blogpicture/blog2b.jpg)
 # III. VẬY HỆ THỐNG ĐƠN HÀNG NÊN DÙNG LOẠI NÀO?
 Theo mình, lựa chọn phụ thuộc vào yêu cầu cụ thể của hệ thống.
 * Nên chọn RDS khi:

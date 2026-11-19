@@ -25,7 +25,7 @@ Kiểm tra stack đã biến mất:
 aws cloudformation list-stacks --stack-status-filter CREATE_COMPLETE UPDATE_COMPLETE DELETE_FAILED --query "StackSummaries[].StackName" --output text
 ```
 
-![Kết quả xóa stack](/images/5-Workshop/5.8-Cleanup/delete-stack.png)
+![Kết quả xóa stack](/WorkshopFCAJ/images/5-Workshop/5.8-Cleanup/delete-stack.png)
 
 #### 2. Xóa log group của Lambda
 
@@ -66,7 +66,7 @@ Remove-Item Env:API_KEY, Env:CUSTOMER_EMAIL -ErrorAction SilentlyContinue
 2. Vào **Billing and Cost Management** → **Cost Explorer**, kiểm tra lại sau 1 đến 2 ngày để chắc chắn chi phí về 0.
 3. Giữ lại ngân sách trong **AWS Budgets** nếu bạn còn dùng tài khoản này.
 
-![Kiểm tra chi phí](/images/5-Workshop/5.8-Cleanup/cost-check.png)
+![Kiểm tra chi phí](/WorkshopFCAJ/images/5-Workshop/5.8-Cleanup/cost-check.png)
 
 ## Checklist dọn dẹp
 

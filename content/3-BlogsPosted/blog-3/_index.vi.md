@@ -17,7 +17,7 @@ Mình từng nghĩ rằng khi traffic tăng, chỉ cần bật EC2 Auto Scaling 
 Khi traffic tăng gấp 10 lần, EC2 tự động scale từ 2 lên 10 instances. Tuy nhiên, RDS lại tăng CPU lên 95–100%, số lượng connections tăng cao và API bắt đầu phản hồi chậm.
 Lúc này, dù EC2 đã scale out, hệ thống vẫn có thể gặp tình trạng quá tải.
 
-![Auto-Scaling](/images/blogpicture/blog3.jpg)
+![Auto-Scaling](/WorkshopFCAJ/images/blogpicture/blog3.jpg)
 # Vì sao auto scaling chưa đủ ?
 Theo mình, vấn đề nằm ở chỗ Auto Scaling thường chỉ mở rộng một thành phần cụ thể, trong khi hiệu năng của hệ thống phụ thuộc vào nhiều thành phần khác nhau.
 * Ví dụ:

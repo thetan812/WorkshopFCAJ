@@ -55,7 +55,7 @@ Some benefits of DLQ:
 - Prevents continuous failing messages from disrupting the overall processing flow.
 - Helps identify requests that cannot be processed successfully.
 - Allows investigating the cause and reprocessing messages once the issue is resolved.
-![AWS](/images/blogpicture/blog1.jpg)
+![AWS](/WorkshopFCAJ/images/blogpicture/blog1.jpg)
 # IV. IDEMPOTENCY – AVOIDING DUPLICATE ORDER PROCESSING
 One interesting thing I found while researching systems using SQS and Lambda is that: a message can be processed multiple times.
 

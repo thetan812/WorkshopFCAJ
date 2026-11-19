@@ -65,7 +65,7 @@ Answer the prompts as follows:
 
 When it finishes, SAM prints `QueueUrl` and `DlqUrl`.
 
-![Deploy result](/images/5-Workshop/5.3-SQS-DLQ/deploy-result.png)
+![Deploy result](/WorkshopFCAJ/images/5-Workshop/5.3-SQS-DLQ/deploy-result.png)
 
 #### 3. Verify in the Console
 
@@ -73,7 +73,7 @@ When it finishes, SAM prints `QueueUrl` and `DlqUrl`.
 2. You will see two queues whose names start with `order-system-`.
 3. Open the main queue → **Dead-letter queue** tab: the dead-letter queue is attached, with **Maximum receives = 3**.
 
-![SQS queues](/images/5-Workshop/5.3-SQS-DLQ/queues.png)
+![SQS queues](/WorkshopFCAJ/images/5-Workshop/5.3-SQS-DLQ/queues.png)
 
 #### 4. Test a message falling into the DLQ
 
@@ -107,7 +107,7 @@ aws sqs get-queue-attributes --queue-url $dlq --attribute-names ApproximateNumbe
 
 Or go to the Console → the DLQ queue → **Send and receive messages** → **Poll for messages**.
 
-![Message in the DLQ](/images/5-Workshop/5.3-SQS-DLQ/dlq-message.png)
+![Message in the DLQ](/WorkshopFCAJ/images/5-Workshop/5.3-SQS-DLQ/dlq-message.png)
 
 > SQS metrics are approximate and may be delayed by several tens of seconds.
 

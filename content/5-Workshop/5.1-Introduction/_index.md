@@ -21,7 +21,7 @@ This workshop builds an order-processing flow that is **event-driven, fault-tole
 
 ## Architecture
 
-{{< figure src="/images/5-Workshop/5.1-Introduction/architecture.png" alt="Overall architecture" >}}
+{{< figure src="/WorkshopFCAJ/images/5-Workshop/5.1-Introduction/architecture.png" alt="Overall architecture" >}}
 
 ## Evaluation metrics
 

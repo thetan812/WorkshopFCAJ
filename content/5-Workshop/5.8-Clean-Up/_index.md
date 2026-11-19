@@ -25,7 +25,7 @@ Check that the stack is gone:
 aws cloudformation list-stacks --stack-status-filter CREATE_COMPLETE UPDATE_COMPLETE DELETE_FAILED --query "StackSummaries[].StackName" --output text
 ```
 
-![Delete stack result](/images/5-Workshop/5.8-Cleanup/delete-stack.png)
+![Delete stack result](/WorkshopFCAJ/images/5-Workshop/5.8-Cleanup/delete-stack.png)
 
 #### 2. Delete the Lambda log groups
 
@@ -69,7 +69,7 @@ Remove-Item Env:API_KEY, Env:CUSTOMER_EMAIL -ErrorAction SilentlyContinue
 2. Go to **Billing and Cost Management** → **Cost Explorer** and check again after 1 to 2 days to make sure the cost is back to 0.
 3. Keep the budget in **AWS Budgets** if you are still using this account.
 
-![Cost check](/images/5-Workshop/5.8-Cleanup/cost-check.png)
+![Cost check](/WorkshopFCAJ/images/5-Workshop/5.8-Cleanup/cost-check.png)
 
 ## Cleanup Checklist
 
