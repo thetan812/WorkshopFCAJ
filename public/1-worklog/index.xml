@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Worklog on Internship Report.</title>
+		<link>http://localhost:1313/1-worklog/</link>
+		<description>Recent content in Worklog on Internship Report.</description>
+		<generator>Hugo</generator>
+		<language>en</language>
+		
+		
+		
+		
+			<lastBuildDate>Mon, 21 Sep 2026 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/1-worklog/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Week 7 Worklog</title>
+				<link>http://localhost:1313/1-worklog/1.7-week7-worklog/1.7-week_index/</link>
+				<pubDate>Mon, 21 Sep 2026 00:00:00 +0000</pubDate>
+				<guid>http://localhost:1313/1-worklog/1.7-week7-worklog/1.7-week_index/</guid>
+				<description>&lt;p&gt;&lt;strong&gt;Internship period:&lt;/strong&gt; 21/09/2026 - 26/09/2026&lt;/p&gt;&#xA;&lt;h3 id=&#34;week-7-objectives&#34;&gt;Week 7 Objectives:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Understand application containerization on AWS.&lt;/li&gt;&#xA;&lt;li&gt;Practice managing and deploying cloud container services.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;tasks-completed&#34;&gt;Tasks Completed:&lt;/h3&gt;&#xA;&lt;table&gt;&#xA;&#x9;&lt;thead&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Date&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Task&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;th&gt;Reference Material&lt;/th&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/thead&gt;&#xA;&#x9;&lt;tbody&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;21/09/2026&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Study container concepts and compare containers with virtual machines.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://cloudjourney.awsstudygroup.com/&#34;&gt;https://cloudjourney.awsstudygroup.com/&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;22/09/2026&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Review the AWS services used to store and run container images.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://cloudjourney.awsstudygroup.com/&#34;&gt;https://cloudjourney.awsstudygroup.com/&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;23/09/2026&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Prepare a simple application container and its runtime configuration.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://cloudjourney.awsstudygroup.com/&#34;&gt;https://cloudjourney.awsstudygroup.com/&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;25/09/2026&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Practice deploying and managing the containerized application on AWS.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://cloudjourney.awsstudygroup.com/&#34;&gt;https://cloudjourney.awsstudygroup.com/&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&#x9;&#x9;&lt;tr&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;26/09/2026&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;Verify the deployment and clean up the lab resources.&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&lt;td&gt;&lt;a href=&#34;https://cloudjourney.awsstudygroup.com/&#34;&gt;https://cloudjourney.awsstudygroup.com/&lt;/a&gt;&lt;/td&gt;&#xA;&#x9;&#x9;&#x9;&lt;/tr&gt;&#xA;&#x9;&lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;h3 id=&#34;week-7-achievements&#34;&gt;Week 7 Achievements:&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Understood the advantages and limitations of containerized workloads.&lt;/li&gt;&#xA;&lt;li&gt;Practiced the basic workflow for packaging, deploying, and managing a container application on AWS.&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+	</channel>
+</rss>
