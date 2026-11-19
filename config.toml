@@ -1,4 +1,5 @@
 baseURL = "https://thetan812.github.io/WorkshopFCAJ/"
+canonifyURLs = true
 theme = "hugo-theme-learn"
 defaultContentLanguage = "en"
 
